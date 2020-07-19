@@ -3,8 +3,8 @@ import Layout from "../components/layout/Layout";
 import DetallesProducto from "../components/layout/DetallesProducto";
 import useProductos from "../hooks/useProductos";
 
-const Home = () => {
-  const { productos } = useProductos("creado");
+const Populares = () => {
+  const { productos } = useProductos("votos");
   return (
     <div className="container">
       <Layout>
@@ -21,4 +21,4 @@ const Home = () => {
     </div>
   );
 };
-export default Home;
+export default Populares;
